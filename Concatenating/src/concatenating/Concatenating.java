@@ -19,5 +19,4 @@ public class Concatenating {
         System.out.println("Bills are sent on day " + date + " of the month");
         System.out.println("Next bill: October " + date);
     }
-    
 }
