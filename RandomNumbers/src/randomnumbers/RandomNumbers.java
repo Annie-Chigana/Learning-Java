@@ -23,6 +23,30 @@ public class RandomNumbers {
         
         System.out.println("The random number is: " + random + " You entered " + userNum);
         
+        //Miles conversion
+        float inches = 63360;
+        float feet = 5280;
+        float yards = 1760;
+        
+        float miles;
+        
+        float mileInInch;
+        float mileInFeet;
+        float mileInYard;
+        
+        Scanner input2 = new Scanner(System.in);
+        System.out.println ("Enter number of miles: ");
+        
+        miles = input2.nextFloat();
+        
+        mileInInch = inches * miles;
+        mileInFeet = feet * miles;
+        mileInYard = yards * miles;
+        
+        System.out.println(miles + " Miles in inches is: " + mileInInch);
+        System.out.println(miles + " Miles in feet is:" + mileInFeet);
+        System.out.println(miles + " Miles in yards is:" + mileInYard);
+        
     }
     
 }
