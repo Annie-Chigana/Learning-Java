@@ -24,9 +24,9 @@ public class SalaryDialog {
         
         
         selection = JOptionPane.showConfirmDialog(null, "Confirm that you work 37.5 hours in a week");
-        
+        //the output is still flawed
         isYes = (selection == JOptionPane.YES_OPTION);
-        JOptionPane.showMessageDialog(null, isYes + "Weekly salary is $" + weeklyPay + "\nDeductions will be made for " + dependents + " dependents");
+        JOptionPane.showMessageDialog(null, "Weekly salary is $" + weeklyPay + "\nDeductions will be made for " + dependents + " dependents");
     }
     
 }
