@@ -4,8 +4,6 @@
 package randomnumbers;
 
 import java.util.Scanner;
-import java.util.Random;
-
 public class RandomNumbers {
 
     public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class RandomNumbers {
         System.out.println(userNum == random);
         System.out.println("The random number is: " + random + " You entered " + userNum);
         
-        int dif = userNum - random;
+        int dif = Math.abs(userNum - random);
         
         System.out.println("The difference between your number and the random number is " + dif);
     }
