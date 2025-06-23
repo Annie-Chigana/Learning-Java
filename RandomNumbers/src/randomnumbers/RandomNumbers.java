@@ -21,8 +21,12 @@ public class RandomNumbers {
         
         userNum = userInput.nextInt();
         
+        System.out.println(userNum == random);
         System.out.println("The random number is: " + random + " You entered " + userNum);
         
+        int dif = userNum - random;
+        
+        System.out.println("The difference between your number and the random number is " + dif);
     }
     
 }
