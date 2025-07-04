@@ -1,20 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+// Filename: Blocks.java
+// Written by Annie
+// Written on 04/07/2025
 package blocks;
 
-/**
- *
- * @author annie
- */
 public class Blocks {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int aNumber = 10;
+        System.out.println("In outer block, aNumber is " + aNumber);
+        
+        
+        {//Starting an inner bloack
+            int anotherNumber = 512;//variable declared in inner block
+            System.out.println("In inner block, aNumber is " + aNumber + " and another number is  " + anotherNumber);
+            
+        }//end of inner block
+        
+        //anotherNumber is out of scope
+        System.out.println("In outer block, aNumber is " + aNumber);
     }
     
 }
